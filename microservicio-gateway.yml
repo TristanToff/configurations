@@ -13,9 +13,9 @@ spring:
       mvc:
         routes:
           - id: personal
-            uri: http://localhost:8090
+            uri: http://localhost:8093
             predicates:
-              - Path=/api/personal/**
+              - Path=/api/experiencia/**
           - id: order
             uri: http://localhost:8091
             predicates:
