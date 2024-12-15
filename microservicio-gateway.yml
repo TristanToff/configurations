@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    register-with-eureka: false
+
+spring:
+  application:
+    name: microservicio-gateway
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: personal
+            uri: http://localhost:8090
+            predicates:
+              - Path=/api/personal/**
+          - id: order
+            uri: http://localhost:8091
+            predicates:
+              - Path=/api/order/**
