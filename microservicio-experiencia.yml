@@ -11,7 +11,7 @@ spring:
     password:
   jpa:
     hibernate:
-      dll-auto: update
+      dll-auto: create
     database: mysql
     database-platform: org.hibernate.dialect.MySQL8Dialect
 
