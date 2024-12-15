@@ -8,12 +8,13 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/experienciadb
     username: root
-    password:
+    password: 
   jpa:
     hibernate:
-      dll-auto: create
+      ddl-auto: create  # Corrige 'dll-auto' a 'ddl-auto'
     database: mysql
     database-platform: org.hibernate.dialect.MySQL8Dialect
+
 
 
 
