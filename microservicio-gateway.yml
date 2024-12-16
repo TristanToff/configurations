@@ -12,11 +12,24 @@ spring:
     gateway:
       mvc:
         routes:
-          - id: personal
+          - id: experiencia
             uri: http://localhost:8093
             predicates:
               - Path=/api/experiencia/**
-          - id: order
+          - id: personal
+            uri: http://localhost:8090
+            predicates:
+              - Path=/api/personal/**
+          - id: proyecto
             uri: http://localhost:8091
             predicates:
-              - Path=/api/order/**
+              - Path=/api/proyecto/**
+          - id: idioma
+            uri: http://localhost:8090
+            predicates:
+              - Path=/api/idioma/**
+          - id: habilidades
+            uri: http://localhost:8092
+            predicates:
+              - Path=/api/habilidades/**
+          
