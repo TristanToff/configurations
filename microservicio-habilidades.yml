@@ -6,7 +6,7 @@ spring:
     name: microservicio-habilidades
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/habilidadesdb
+    url: jdbc:mysql://localhost:3306/portafoliodb
     username: root
     password:
   jpa:
