@@ -11,7 +11,7 @@ spring:
     password: 
   jpa:
     hibernate:
-      ddl-auto: create  # Corrige 'dll-auto' a 'ddl-auto'
+      ddl-auto: update  # Corrige 'dll-auto' a 'ddl-auto'
     database: mysql
     database-platform: org.hibernate.dialect.MySQL8Dialect
 
